@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 46% 18% 18% 18%;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .p1 {
+            padding-left: 6%;
+            padding-top: 2%;
+           
+        }
+
+        .p2 {
+
+            padding-top: 2%;
+            
+        }
+
+        .p3 {
+
+            padding-top: 2%;
+         
+
+        }
+
+        .p4 {
+
+            padding-top: 2%;
+            
+        }
+
+        .header1 {
+            color: white;
+            text-align: center;
+            margin-top: 30%;
+            line-height: 70%;
+        }
+
+        .p5 {
+            font-size: 50px;
+            line-height: 50%;
+           text-shadow: 2px 2px black;
+        }
+
+        .main {
+            background-image: url(./image-01.jpg);
+            background-repeat: round;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            padding-bottom: 10%;
+        }
+
+        .c2 {
+            width: 100%;
+            height: 20em;
+            margin-top: 60px;
+            margin-left: 75px;
+            display: flex;
+            align-content: center;
+        }
+
+        .c1 {
+            display: grid;
+            gap: 15%;
+            grid-template-columns: auto auto;
+          
+        }
+
+        .c4 {
+            margin-top: 6%;
+            color: rgb(62, 62, 231);
+        }
+
+        .c5 {
+            border-radius: 15px;
+            background-color: rgba(52, 52, 166, 0.612);
+            color: white;
+            padding: 2px;
+            width: 90px;
+            margin-bottom: 19%;
+        }
+
+        .content2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 3%;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        .d1 {
+
+            margin-top: 95px;
+            margin-left: 80px;
+        
+        }
+
+        .d2 {
+
+            margin-top: 70px;
+            
+        }
+
+        .d3 {
+           
+            margin-top: 70px;
+        }
+
+        .content4 {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .work {
+            width: 100%;
+            height: 100%;
+        }
+
+        .w1 {
+            text-align: center;
+            padding: 2%;
+        }
+
+        .w7 {
+            justify-content: center;
+            display: flex;
+            font-size: x-large;
+        }
+
+        .w8 {
+            color: rgb(123, 111, 111);
+        }
+
+        .us {
+            background-image: url(./image-08.jpg);
+            width: 100%;
+            height: 100%;
+        }
+
+        .u2 {
+            color: rgb(247, 246, 246);
+            padding-top: 10%;
+            margin-left: 8%;
+            font-weight: normal;
+            font-size: xxx-large;
+        }
+
+        .u1 {
+            background-color: rgba(166, 139, 139, 0);
+            color: rgb(251, 250, 250);
+            margin-top: 10px;
+            margin-left: 9px;
+        }
+
+        .u3 {
+            border-top: 1px solid white;
+            width: 80%;
+            margin-left: 80px;
+        }
+
+        .u4 {
+            border-bottom: 6px solid white;
+            width: 20%;
+        }
+
+        .u5 {
+            margin-left: 5%;
+            color: rgb(247, 243, 243);
+            margin-top: 5%;
+        }
+
+        .q1 {
+            width: 5%;
+            height: 4%;
+            margin-left: 48%;
+            margin-top: 6%;
+        }
+
+        .m {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            gap: 20%;
+            margin-top: 10%;
+        }
+
+        @media screen and (max-width: 680px) {
+
+
+            .header {
+                grid-template-columns: auto auto auto;
+            }
+
+        }
+
+        @media screen and (max-width: 580px) {
+            .c2 {
+                margin-left: 0px;
+            }
+
+            .c1 {
+                grid-template-columns: auto;
+            }
+
+            .content2 {
+                justify-content: start;
+                grid-template-columns: auto auto;
+
+
+            }
+
+            .d1 {
+                margin-left: 0px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+
+
+            .content2 {
+                grid-template-columns: auto;
+                justify-content: start;
+
+            }
+
+            .header {
+                grid-template-columns: auto auto;
+            }
+
+            .m {
+                grid-template-columns: auto;
+            }
+            .u3{
+                width:40%;
+            }
+        }
+
+        @media screen and (max-width: 200px) {
+            .u3{
+                width:20%;
+            }
+            .u1{
+                width: 20px;
+
+            }
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <p class="p1"><b>The Town</b></p>
+            <p class="p2"><b>Introduction</b></p>
+            <p class="p3"><b>Our Work</b></p>
+            <p class="p4"><b>Contact Us</b></p>
+        </div>
+        <div class="header1">
+            <p class="p5">The Town</p>
+            <p>Parallax Bootstrap Theme</p>
+            <p>by TemplateMo</p>
+        </div>
+        <div><img class="q1" src="./play-button-com.svg"></div>
+    </div> <br>
+    <div class="content">
+        <div class="c1">
+            <img src="./image-02.jpg" class="c2">
+            <div class="c3">
+                <p>
+                <h1 class="c4">Introduction</h1>
+                <p1>The Town is <b>simple CSS template</b> built on Bootstrap
+                    v4.1.3 and this is a little parallax layout that you can use
+                    for your websites.</p1>
+                <pre></pre>
+                <p2>Please tell your friends about our site <strong
+                        style="color: rgba(5, 5, 243, 0.834);">templatemo.</strong>
+                    Thank you.Curabitur dapibus tristique enim a imperdiet.
+                    Etiam tristique sem sed condimentum posuere.</p2>
+                <pre>  </pre>
+                <button
+                    style="border-radius: 18px; background-color: rgba(0, 0, 255, 0.786);color: white;border: 2px solid;"
+                    class="c5">Read More</button> </p>
+            </div>
+        </div>
+
+
+        <div class="content2">
+            <div class="d1"><img src="./bus-.svg" width="40px" style="margin-left: 100px;">
+                <h1>Curabitur at elit eu risus</h1>
+                <p>sed ultrices sit amet mi eu malesuda. Cras </p>
+                <p>ultricies gravida nisi,ac pellentesque nunc </p>
+                <p> tincidunt quis. Aeneam at ornare lacus. Duis</p>
+                <p>imperdiet lacus justo.</p>
+            </div>
+            <div class="d2">
+                <img src="./bicycle-.svg" width="40px" style="margin-left: 100px;">
+                <h1>Nunc sed metus vel nisi</h1>
+                <p>Praesent ut finibus leo. Duis et tempus ipsum,id</p>
+                <p>pretium nunc. Vivamus imperdiet sem quis orci</p>
+                <p>pharetra convallis. Nunc a tempus nisi, sed</p>
+                <p>fringilla purus. In hac habitasse platea.</p>
+            </div>
+            <div class="d3">
+                <img src="./city-.svg" width="40px" style="margin-left: 100px;">
+                <h1>Fusce sed nisi sagittis</h1>
+                <p>Donec vestibulum libero nisl. Curabitur ac orci ac</p>
+                <p>lorem blandit volutpat. Sed ac sodales nibh, ut</p>
+                <p>porttitor elit. Sed id dui mi. Vestibulum ante</p>
+                <p>ipsum primis in faucibus.</p>
+            </div>
+        </div>
+    </div>
+    <div class="work">
+        <div class="w1">
+            <h1>Our Work</h1>
+            <p>"Curabitur ac orci ac lorem blandit volutpat. Sed ac sodales nibh,
+                ut porttitor elit. Sed id dui</p>
+            <p style="text-align-last: center;">mi. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia."</p>
+        </div>
+        <pre>             </pre>
+        <div class="content4">
+            <div class="w2"><img src="./image-03.jpg" width="200px" height="250px"></div>
+            <div class="w3">
+                <img src="./image-04.jpg" width="200px" height="250px">
+            </div>
+            <div class="w4">
+                <img src="./image-05.jpg" width="200px" height="250px">
+            </div>
+            <div class="w5">
+                <img src="./image-06.jpg" width="200px" height="250px">
+            </div>
+            <div class="w6">
+                <img src="./image-07.jpg" width="200px" height="250px">
+            </div>
+        </div>
+        <div class="w7">
+            <h1>&#x2022;</h1>
+            <h1 class="w8"> &#x2022;&#x2022;</h1>
+        </div>
+    </div>
+    <div class="us">
+        <div class="u1">
+            <h1 class="u2"> contact us</h1>
+        </div>
+        <div class="u3">
+            <div class="u4"> </div>
+        </div>
+        <p class="u5">Nullam tincidunt,lacus a suscipit luctus,elit turpis tincidunt dui, non tempus sem turpis vitae
+            lorem. Maecenas eget odio in sapien</p>
+        <p class="u9" style="color: white; margin-left: 80px;">ultrices viverra vitae vel leo.Curabitur at elit eu risus
+            pharetra pellentesque at velit.</p>
+
+
+        <div class="m">
+
+            <div class="u6"><img src="./call.svg" height="50" style=" left: 200px; top: 50px;"><span
+                    style="color: white;">010-020-0340 </span>
+
+            </div>
+            <div class="u8"><img src="./mail.svg" height="40" style=" left: 947px;top: -30px;"> <span
+                    style="color: white;">info@company.co</span>
+
+            </div>
+            <div class="u7"><img src="./location.svg" height="50" style="left: 200px; top: 225px;"><span
+                    style="color: white;">Location On Maps</span>
+
+            </div>
+            <div> <input type="search" class="u1" name="hhh" value="subscribe your email">
+                <button>sudmit</button>
+            </div>
+        </div>
+        <div>
+            <p class="u9" style="color: white;text-align: center; margin-top: 130px; position: relative;">copyright
+                &copy 2019 Company Name - Design: Template Mo</p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
